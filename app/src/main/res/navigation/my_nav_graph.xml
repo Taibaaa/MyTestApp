@@ -1,0 +1,48 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_graph"
+    app:startDestination="@id/splashFragment2">
+
+    <fragment
+        android:id="@+id/splashFragment2"
+        android:name="com.test.interview.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+
+    <fragment
+        android:id="@+id/privacyFragment2"
+        android:name="com.test.interview.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+
+    <fragment
+        android:id="@+id/homeFragment5"
+        android:name="com.test.interview.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/ramzanFragment"
+        android:name="com.test.interview.RamzanFragment"
+        android:label="fragment_ramzan"
+        tools:layout="@layout/fragment_ramzan" />
+
+    <action
+        android:id="@+id/action_splashFragment_to_privacyFragment"
+        app:destination="@id/privacyFragment2" />
+    <action
+        android:id="@+id/action_privacyFragment_to_mainFragment"
+        app:destination="@id/homeFragment5" />
+    <fragment
+        android:id="@+id/fragmentMenu2"
+        android:name="com.test.interview.Menu2Fragment"
+        android:label="fragment_menu2"
+        tools:layout="@layout/fragment_menu2" />
+    <fragment
+        android:id="@+id/fragmentFavorite"
+        android:name="com.test.interview.fragmentFavorite"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+
+</navigation>
